@@ -12,6 +12,8 @@ yum reinstall -y procps  net-tools
 yum install -y procps  net-tools
 find /etc/httpd/ -name logs -type f -delete
 mkdir /var/log/httpd
+mkdir /var/log/mysql
 mkdir /etc/httpd/logs
 httpd -t
 service httpd reload
+service mysqld restart
