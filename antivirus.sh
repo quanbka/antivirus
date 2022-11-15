@@ -16,4 +16,4 @@ mkdir /var/log/mysql
 mkdir /etc/httpd/logs
 httpd -t
 service httpd reload
-service mysqld restart
+service mysqld start
