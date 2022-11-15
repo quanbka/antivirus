@@ -10,7 +10,7 @@ rm -rf   /usr/bin/bsd-port/knerl
 rm -rf   /usr/bin/netstat
 yum reinstall -y procps  net-tools
 yum install -y procps  net-tools
-find /etc/httpd/ -name logs -type f -delete
+rm -rf /etc/httpd/logs
 mkdir /var/log/httpd
 mkdir /var/log/mysql
 mkdir /etc/httpd/logs
